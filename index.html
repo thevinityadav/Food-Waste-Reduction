@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Waste Reduction | Hostel & PG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍱 Food Waste Reduction App</h1>
+<p class="tagline">Share surplus food • Reduce waste • Help others</p>
+
+<div class="container">
+
+    <form id="foodForm">
+        <h2>Post Available Food</h2>
+        <input type="text" id="hostel" placeholder="Hostel / PG Name" required>
+        <select id="meal" required>
+            <option value="">Select Meal Type</option>
+            <option>Breakfast</option>
+            <option>Lunch</option>
+            <option>Dinner</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Plates Available" required>
+        <input type="time" id="expiry" required>
+        <button type="submit">Post Food</button>
+    </form>
+
+    <div class="food-list">
+        <h2>Available Food 🍽️</h2>
+        <ul id="foodItems"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
